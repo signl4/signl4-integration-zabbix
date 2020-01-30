@@ -31,6 +31,14 @@
                     <name>Severity</name>
                     <value>{EVENT.SEVERITY}</value>
                 </parameter>
+				<parameter>
+                    <name>EventID</name>
+                    <value>{EVENT.ID}</value>
+                </parameter>
+				<parameter>
+                    <name>X-S4-ExternalID</name>
+                    <value>{EVENT.ID}</value>
+                </parameter>
             </parameters>
             <script>// SIGNL4 Webhook&#13;
 try {&#13;
