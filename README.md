@@ -8,7 +8,7 @@ Get the app at https://www.signl4.com.
 
 Pairing Zabbix with SIGNL4 can enhance your daily operations with an extension to your team wherever it is.
 
-![SIGNL4](signl4-zabbix.png)
+![SIGNL4](images/signl4-zabbix.png)
 
 ## Setup
 
@@ -33,7 +33,7 @@ Get the XML file (zabbix-signl4.xml) for Zabbix from GitHub (https://github.com/
 3. Import the Media Type  
 In Zabbix you can now impart a new Media Type under Administration -> Media types -> Import. Select the file zabbix-signl4.xml here.
 
-![Zabbix Media Type](zabbix-webhook-media-type.png)
+![Zabbix Media Type](images/zabbix-webhook-media-type.png)
 
 The parameter teamsecret is filled from the user's Sent to field. The other parameters are flexible and you can add, remove or adapt them as needed.
 
@@ -41,14 +41,14 @@ The parameter teamsecret is filled from the user's Sent to field. The other para
 Under Administration -> Users, create a dedicated user and add the media type we have created above.
 Sent to: This is the team secret of your SIGNL4 team. This is the last part of your webhook URL: https://connect.signl4.com/webhook/<team-secret>.
 
-![User](zabbix-webhook-user.png)
+![User](images/zabbix-webhook-user.png)
 
 Please note that this user represents your SIGNL4 team, so it is more a team than a single user in this case.
 
 5. Create an Action  
 Under Configuration -> Actions you can create an Action that will send the notification to the SIGNL4 user.
 
-![Action](zabbix-script-action.png)
+![Action](images/zabbix-script-action.png)
 
 6. Test it  
 Now you can trigger a problem that will call the above action to then send the alert notification to your SIGNL4 user.
@@ -82,7 +82,7 @@ Type: Script
 Script: zabbix-signl4.py
 Script parameters: {ALERT.SENDTO}, {ALERT.SUBJECT}, {ALERT.MESSAGE}
 
-![Zabbix Media Type](zabbix-script-media-type.png)
+![Zabbix Media Type](images/zabbix-script-media-type.png)
 
 4. Add Media Type to User  
 Under Administration -> Users, create a dedicated user and add the media type we have created above.
@@ -95,7 +95,7 @@ Please note that this user represents your SIGNL4 team, so it is more a team tha
 5. Create an Action  
 Under Configuration -> Actions you can create an Action that will send the notification to the SIGNL4 user.
 
-![Action](zabbix-script-action.png)
+![Action](images/zabbix-script-action.png)
 
 6. Test it  
 Now you can trigger a problem that will call the above action to then send the alert notification to your SIGNL4 user.
