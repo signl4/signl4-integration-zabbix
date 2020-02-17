@@ -37,7 +37,7 @@
                 </parameter>
 				<parameter>
                     <name>X-S4-ExternalID</name>
-                    <value>{EVENT.ID}</value>
+                    <value>ZabbixEventId: {EVENT.ID}</value>
                 </parameter>
             </parameters>
             <script>// SIGNL4 Webhook&#13;
