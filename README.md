@@ -54,7 +54,7 @@ Now you can trigger a problem that will call the above action to then send the a
 
 You can find the package in Git: https://git.zabbix.com/projects/ZBX/repos/zabbix/browse/templates/media/signl4
 
-You can find the information and gackaged for older Zabbix versions on GitHub:
+You can find the information and packages for older Zabbix versions on GitHub:
 https://github.com/signl4/signl4-integration-zabbix
 
 
