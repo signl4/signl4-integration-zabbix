@@ -18,7 +18,7 @@ If you use Zabbix 4.4 or higher the webhook is the recommended option. Since Zab
 2. Script  
 If you are using a Zabbix version lower than 4.4 you the script integration is for you.
 
-## Webhook Integraion
+## Webhook Integration
 
 This section describes the setup and configuration of the SIGNL4 webhook for Zabbix:
 
@@ -26,7 +26,7 @@ This section describes the setup and configuration of the SIGNL4 webhook for Zab
 If not already done, sign up for your SIGNL4 account at https://www.signl4.com or directly from within your SIGNL4 app you can download from the Play Store or App Store.
 
 2. Get the Webhook XML  
-If you use Zabbix 5.0 hor higher, SIGNL4 is already available as a mediatype by default. Otherwise you can get the XML file (zabbix-signl4.xml) for Zabbix from Git (https://git.zabbix.com/projects/ZBX/repos/zabbix/browse/templates/media/signl4).
+If you use Zabbix 5.0 for higher, SIGNL4 is already available as a media type by default. Otherwise you can get the XML file (zabbix-signl4.xml) for Zabbix from Git (https://git.zabbix.com/projects/ZBX/repos/zabbix/browse/templates/media/signl4).
 
 3. Import and Configure the Media Type  
 In the SIGNL4 media type you just need to configure the parameter "teamsecret". This is the team secret of your SIGNL4 team. This is the last part of your webhook URL: https://connect.signl4.com/webhook/<team-secret>.
@@ -42,7 +42,7 @@ Under Administration -> Users, create a dedicated user and add the media type we
 Please note that this user represents your SIGNL4 team, so it is more a team than a single user in this case.
 
 5. Configure Two-Way Integration  
-In addition it is possible to acknowledge, annotate and close alerts from SIGNL4. To forward this information back to Zabbix, you need to configure the Zabbix connector in your SIGNL4 portal under Apps. Here you need to configure the Zabbix username and password as well as the public Zabbix URL rechable from the Internet.
+In addition it is possible to acknowledge, annotate and close alerts from SIGNL4. To forward this information back to Zabbix, you need to configure the Zabbix connector in your SIGNL4 portal under Apps. Here you need to configure the Zabbix username and password as well as the public Zabbix URL reachable from the Internet.
 
 6. Create an Action  
 Under Configuration -> Actions you can create an Action that will send the notification to the SIGNL4 user.
