@@ -49,7 +49,7 @@ Under Configuration -> Actions you can create an Action that will send the notif
 
 ![Action](images/zabbix-webhook-action.png)
 
-6. Test it  
+7. Test it  
 Now you can trigger a problem that will call the above action to then send the alert notification to your SIGNL4 user.
 
 You can find the package in Git: https://git.zabbix.com/projects/ZBX/repos/zabbix/browse/templates/media/signl4
