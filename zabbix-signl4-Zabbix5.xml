@@ -121,6 +121,7 @@ try {&#13;
 	}&#13;
 	else {&#13;
 		params['X-S4-Status'] = 'new';&#13;
+		params['X-S4-SourceSystem'] = 'Zabbix';&#13;
 	}&#13;
 &#13;
     payload = JSON.stringify(params);&#13;
