@@ -107,7 +107,7 @@ zabbix_export:
         		params['X-S4-Status'] = 'resolved';
         	}
         	else {
-        		if ((params.Event_Update == 1) && (params.Event_Ack == 'Yes')) {
+        		if ((params.Event_Update_Status == 1) && (params.Event_Ack_Status == 'Yes')) {
         			params['X-S4-Status'] = 'acknowledged';
         		}
         		else {
