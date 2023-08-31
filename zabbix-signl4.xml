@@ -39,6 +39,10 @@
                     <name>X-S4-ExternalID</name>
                     <value>ZabbixEventId: {EVENT.ID}</value>
                 </parameter>
+		<parameter>
+                    <name>Zabbix_URL</name>
+                    <value>{$ZABBIX.URL}</value>
+                </parameter>
             </parameters>
             <script>// SIGNL4 Webhook&#13;
 try {&#13;
