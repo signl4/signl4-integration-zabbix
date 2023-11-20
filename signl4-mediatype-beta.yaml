@@ -121,7 +121,7 @@ zabbix_export:
         //endpoint = 'https://b58aee12b873eae71b5db8b4fdc77d78.m.pipedream.net';
         
             request.AddHeader('Content-Type: application/json');
-            response = request.Post(endpoint, 'payload=' + payload);
+            response = request.Post(endpoint, payload);
         
             Zabbix.Log(4, '[ SIGNL4 Webhook ] Received response with status code ' +
                     request.Status() + '\n' + response
