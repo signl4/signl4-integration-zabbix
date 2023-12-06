@@ -96,7 +96,8 @@ zabbix_export:
         			params.Zabbix_URL = params.Zabbix_URL + '/';
         		}
         
-        		params['X-S4-ExternalID'] = params['X-S4-ExternalID'] + ' ZabbixURL: ' +  params.Zabbix_URL;
+        		params['X-S4-SourceSystem'] = 'Zabbix';            
+            params['X-S4-ExternalID'] = params['X-S4-ExternalID'] + ' ZabbixURL: ' +  params.Zabbix_URL;
         
         		// Add Link parameter
         		params['Link'] = params.Zabbix_URL + "tr_events.php?triggerid="+params.Trigger_ID + "&eventid=" + params.Event_ID;
@@ -107,7 +108,7 @@ zabbix_export:
         		params['X-S4-Status'] = 'resolved';
         	}
         	else {
-        		if ((params.Event_Update_Status == 1) && (params.Event_Ack_Status == 'Yes')) {
+        		if ((params.Event_Update == 1) && (params.Event_Ack == 'Yes')) {
         			params['X-S4-Status'] = 'acknowledged';
         		}
         		else {
@@ -130,7 +131,7 @@ zabbix_export:
             if (request.Status() !== 201) {
                 throw 'Request failed with status code ' + request.Status() +
                         '. Check debug log for more information.';
-            }
+     source       }
         
             return 'OK';
         }
