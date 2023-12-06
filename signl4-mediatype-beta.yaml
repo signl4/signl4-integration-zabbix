@@ -96,7 +96,7 @@ zabbix_export:
         			params.Zabbix_URL = params.Zabbix_URL + '/';
         		}
         
-        		params['X-S4-SourceSystem'] = 'Zabbix';            
+        		params['X-S4-SourceSystem'] = 'Zabbix';
             params['X-S4-ExternalID'] = params['X-S4-ExternalID'] + ' ZabbixURL: ' +  params.Zabbix_URL;
         
         		// Add Link parameter
