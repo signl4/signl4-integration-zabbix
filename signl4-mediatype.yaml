@@ -131,8 +131,8 @@ zabbix_export:
             if (request.Status() !== 201) {
                 throw 'Request failed with status code ' + request.Status() +
                         '. Check debug log for more information.';
-     source       }
-        
+            }
+
             return 'OK';
         }
         catch (error) {
