@@ -29,7 +29,7 @@ If not already done, sign up for your SIGNL4 account at https://www.signl4.com o
 If you use Zabbix 5.0 for higher, SIGNL4 is already available as a media type by default. Otherwise you can get the XML file (zabbix-signl4.xml) for Zabbix from Git (https://git.zabbix.com/projects/ZBX/repos/zabbix/browse/templates/media/signl4).
 
 3. Import and Configure the Media Type  
-In the SIGNL4 media type you just need to configure the parameter "teamsecret". This is the team secret of your SIGNL4 team. This is the last part of your webhook URL: https://connect.signl4.com/webhook/<team-secret>.
+In the SIGNL4 media type you just need to configure the parameter "teamsecret". This is the team secret of your SIGNL4 team. This is the last part of your webhook URL: ```https://connect.signl4.com/webhook/<team-secret>```.
 If you use a Zabbix version lower than 5.0 can now import a new Media Type under Administration -> Media types -> Import. Select the file zabbix-signl4.xml here.
 
 ![Zabbix Media Type](images/zabbix-webhook-media-type.png)
@@ -88,7 +88,7 @@ Script parameters: {ALERT.SENDTO}, {ALERT.SUBJECT}, {ALERT.MESSAGE}
 
 4. Add Media Type to User  
 Under Administration -> Users, create a dedicated user and add the media type we have created above.
-Sent to: This is the team secret of your SIGNL4 team. This is the last part of your webhook URL: https://connect.signl4.com/webhook/<team-secret>.
+Sent to: This is the team secret of your SIGNL4 team. This is the last part of your webhook URL: ```https://connect.signl4.com/webhook/<team-secret>```.
 
 ![User](images/zabbix-script-user.png)
 
@@ -104,3 +104,4 @@ Now you can trigger a problem that will call the above action to then send the a
 
 You can find the package on GitHub:
 https://github.com/signl4/signl4-integration-zabbix
+
